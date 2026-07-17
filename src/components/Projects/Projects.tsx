@@ -53,6 +53,8 @@ export function Projects() {
                   <div className="flex gap-3">
                     <a
                       href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold text-white transition-all hover:scale-[1.02]"
                       style={{ backgroundColor: "var(--primary)" }}
                     >
@@ -61,6 +63,8 @@ export function Projects() {
                     </a>
                     <a
                       href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 rounded-xl border px-4 py-2.5 text-sm font-medium transition-all hover:scale-[1.02]"
                       style={{ borderColor: "var(--border)", color: "var(--text-secondary)" }}
                       aria-label={`${project.title} source code`}

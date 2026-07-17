@@ -30,11 +30,18 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## Deploy to Vercel
 
-```bash
-npm run build
-```
+1. Push this repo to GitHub.
+2. Go to [vercel.com](https://vercel.com) → **Add New → Project** → import `durgasara/Portfolio`.
+3. Vercel auto-detects Vite. Confirm:
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+4. Add these **Environment Variables** before deploying:
+   - `VITE_EMAILJS_SERVICE_ID`
+   - `VITE_EMAILJS_TEMPLATE_ID`
+   - `VITE_EMAILJS_PUBLIC_KEY`
+5. Click **Deploy**.
 
-Push to GitHub and import the repo on [Vercel](https://vercel.com). Vercel auto-detects Vite.
+> **Note:** Never commit `.env`. Use `.env.example` locally and set secrets in the Vercel dashboard.
 
 ## Scripts
 
